@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: normal;
+    scrollbar-color: orange transparent;
+}
+
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 5px;
+}
+
+video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+
+}
+
+body {
+    background: black;
+}
+
+/* header */
+.header {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    padding: 0px;
+}
+
+.header .nav .nav__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.header .nav .nav__list .nav__item {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.header .nav .nav__list .nav__item:hover {
+    transform: scale(1.1);
+    color: orange;
+}
+
+.header .nav .nav__list .nav__item a {
+    text-decoration: none;
+    color: white;
+}
+
+.header .logo {
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 10%;
+    letter-spacing: 2px;
+    transition: .5s;
+    
+}
+
+.header .logo:hover {
+    transform: scale(1.1);
+}
+
+.header .logo span {
+    color: orange;
+    margin-top: -5%;
+}
+
+.header .contact__btn {
+    margin-left: 10%;
+    border: none;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 25px;
+    transition: .3s;
+    width: 10%;
+
+    
+}
+
+.header .contact__btn:hover {
+    transform: scale(1.1);
+}
+
+.header .contact__btn a {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header .redes {
+    margin-left: 5%;
+}
+.header .redes a {
+    margin: 10px;
+    transition: .3s;
+}
+
+.header .redes a img:hover {
+    transform: scale(1.5);
+}
+
+/* header media */
+
+@media screen and (max-width: 1090px ) {
+    .header .nav .nav__list .nav__item {
+        margin: 10px;
+    }
+
+    .header .logo {
+        margin-left: 0%;
+    }
+
+    .header .contact__btn {
+        margin-left: -1%;
+    }
+
+    .header .redes {
+        margin-left: 0%;
+    }
+
+    .header .redes a {
+        margin: 2px;
+    }
+
+
+    }
